@@ -1,2 +1,9 @@
 # excel-analytics-portfolio
-excel-analytics-portfolio
+
+This project showcases an end-to-end Excel analytics workflow built from a synthetic 5,000-row operational dataset. The goal was to demonstrate practical skills in data cleaning, standardization, dynamic modeling, and business-oriented analysis—mirroring the type of work used in technical program management, operations, product readiness, and customer analytics.
+
+I began by generating a large Raw_Data dataset simulating customer activity across multiple programs. The data intentionally included inconsistencies in casing, whitespace, numeric formats, and dates to reflect real operational inputs. I then built a structured cleaning pipeline in the Clean_Data sheet to normalize customer and program names, reconstruct dates, convert text-numbers into valid numerics, assign buckets based on value ranges, and flag data quality issues using TextCheck and Data_Quality_Flag fields. All cleaning logic is fully dynamic and formula-driven so any refresh of raw inputs updates the entire model automatically.
+
+Next, I developed an Analysis layer to support aggregated metrics, category grouping, and classification logic using modern Excel functions such as UNIQUE, SORT, FILTER, LET, INDEX, and XLOOKUP. The Summary sheet consolidates key metrics—including monthly and yearly totals, customer-level and program-level value summaries, and bucket analysis—into a clear structure suitable for operational reporting.
+
+Finally, I added two visualization layers: a dynamic Customer × Program heatmap highlighting concentration patterns and engagement clusters, and a dashboard-ready layout for additional charts such as Top Customers, Value1 trends, and distribution views. These components demonstrate how cleaned data can be transformed into insights that support decision-making, prioritization, and stakeholder communication.
